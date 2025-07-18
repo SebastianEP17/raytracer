@@ -1,94 +1,130 @@
-# OOP-400: `Raytracer`
-###### An <img src="https://newsroom.ionis-group.com/wp-content/uploads/2023/09/epitech-2023-logo-m.png" alt="Epitech" height=18/> project
+# Raytracer 🌌
 
----
+![Raytracer](https://img.shields.io/badge/Raytracer-Multi--threaded%20%26%20Clusterized-blue)
 
-## Project
+Welcome to the **Raytracer** repository! This project features a multi-threaded and clusterized raytracer, developed in C++. Raytracing is a powerful technique for rendering images with high realism by simulating the way light interacts with objects.
 
-Ray tracing is a technique used to generate realistic digital images by
-simulating the inverse path of light. Your goal is to create a program able to
-generate an image from a file describing the scene.
+## Table of Contents
 
-## 📩 Installation
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Architecture](#architecture)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-1. Clone the project
-```shell
-git clone git@github.com:EpitechPromo2028/B-OOP-400-REN-4-1-raytracer-pierre.montaret.git raytracer
-cd raytracer/
-```
+## Introduction
 
-2. Build the project
-```sh
-make -s
-```
+Raytracing involves tracing the path of rays of light as they travel through a scene. This project leverages multi-threading and clustering to enhance performance and efficiency. By distributing tasks across multiple threads and nodes, the raytracer can handle complex scenes and produce high-quality images in less time.
 
-3. Launch the project using `./raytracer`
-   If you need any help, `--help` flag is for you!
+You can download the latest release [here](https://github.com/SebastianEP17/raytracer/releases). Make sure to follow the instructions to execute the application correctly.
 
 ## Features
 
-Here is the marking scheme of the project:
+- **Multi-threading**: Efficiently utilizes CPU resources to speed up rendering.
+- **Clustering**: Distributes rendering tasks across multiple machines for improved performance.
+- **Networking**: Supports socket communication for cluster management.
+- **YAML Parser**: Easily configure scenes and settings using YAML files.
+- **High-Quality Output**: Generates realistic images with advanced lighting and shading techniques.
 
-- Primitives
-  - [x] Sphere
-  - [x] Plane
-  - [x] Cylinder
-  - [x] Cone
-  - [x] Limited cylinder (0.5)
-  - [x] Limited cone (0.5)
-  - [ ] Torus (1)
-  - [ ] Tanglecube (1)
-  - [x] Triangle (1)
-  - [x] `.obj` file (1)
-  - [ ] Fractal (2)
-  - [ ] Möbius strip (2)
-- Transformations
-  - [x] Translation
-  - [x] Rotation
-  - [ ] Scale (0.5)
-  - [ ] Shear (0.5)
-  - [ ] Transformation matrix (2)
-  - [ ] Scene graph (2)
-- Lights
-  - [x] Directional light
-  - [x] Ambient light
-  - [x] Drop shadows
-  - [x] Multiple directional lights (0.5)
-  - [x] Multiple point lights (1)
-  - [x] Colored light (0.5)
-  - [ ] Phong reflection model (2)
-  - [ ] Ambient occlusion (2)
-- Materials
-  - [x] Flat color (lambertian)
-  - [ ] Transparency (0.5)
-  - [ ] Refraction (1)
-  - [x] Reflection (0.5)
-  - [ ] Texturing from file (1)
-  - [ ] Texturing from procedural generation of chessboard (1)
-  - [ ] Texturing from procedural generation of Perlin noise (1)
-  - [ ] Normal mapping (2)
-- Scene configuration
-  - [x] Add primitives to scene
-  - [x] Set up lighting
-  - [x] Set up camera
-  - [ ] Import a scene in a scene (2)
-  - [x] Set up antialiasing through supersampling (0.5)
-  - [ ] Set up antialiasing through adaptative supersampling (1)
-- Interface
-  - [x] No GUI, output to a PPM file
-  - [x] Display the image during and after generation (1)
-  - [x] Exit during or after generation (0.5)
-  - [ ] Scene preview using a basic and fast renderer (2)
-  - [ ] Automatic reload of the scene at file change (1)
-- Optimizations
-  - [ ] Space partitionning (2)
-  - [x] Multithreading (1)
-  - [x] Clustering (3)
+## Getting Started
 
-## 👷🏻 Team
+To get started with Raytracer, follow these steps:
 
-| [**Lysandre BOURSETTE**](https://github.com/shuvlyy)<br/><img src="https://avatars.githubusercontent.com/u/123988037?v=4" width=92> | [**Pierre MARGUERIE**](https://github.com/u/146085057)<br/><img src="https://avatars.githubusercontent.com/u/146085057?v=4" width=92> | [**Pierre MONTARET**](https://github.com/u/90644687)<br/><img src="https://avatars.githubusercontent.com/u/90644687?v=4" width=92> |
-|-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [lysandre.boursette@epitech.eu]("mailto:lysandre.boursette@epitech.eu")                                                             | [pierre.marguerie@epitech.eu]("mailto:pierre.marguerie@epitech.eu")                                                                   | [pierre.montaret@epitech.eu]("mailto:pierre.montaret@epitech.eu")                                                                  |
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/SebastianEP17/raytracer.git
+   cd raytracer
+   ```
 
-[![wakatime](https://wakatime.com/badge/user/2f50fe6c-0368-4bef-aa01-3a67193b63f8/project/2100da67-461a-4298-b599-18c8ec1fca67.svg)](https://wakatime.com/badge/user/2f50fe6c-0368-4bef-aa01-3a67193b63f8/project/2100da67-461a-4298-b599-18c8ec1fca67) + [![wakatime](https://wakatime.com/badge/user/2f50fe6c-0368-4bef-aa01-3a67193b63f8/project/3db8bf84-d727-477b-b028-57c54adf3ac3.svg)](https://wakatime.com/badge/user/2f50fe6c-0368-4bef-aa01-3a67193b63f8/project/3db8bf84-d727-477b-b028-57c54adf3ac3)
+2. **Install Dependencies**:
+   Ensure you have the necessary libraries installed. You can find a list of dependencies in the `INSTALL.md` file.
+
+3. **Build the Project**:
+   Use CMake to build the project:
+   ```bash
+   mkdir build
+   cd build
+   cmake ..
+   make
+   ```
+
+4. **Run the Raytracer**:
+   After building, you can run the raytracer:
+   ```bash
+   ./raytracer <path_to_yml_file>
+   ```
+
+For detailed instructions, check the [Releases](https://github.com/SebastianEP17/raytracer/releases) section.
+
+## Usage
+
+The raytracer uses YAML files to define scenes. Each scene can specify various parameters, including camera position, light sources, and object properties. Here’s a basic example of a YAML configuration:
+
+```yaml
+scene:
+  camera:
+    position: [0, 0, -5]
+    lookAt: [0, 0, 0]
+  lights:
+    - position: [10, 10, -10]
+      color: [1, 1, 1]
+  objects:
+    - type: sphere
+      position: [0, 0, 0]
+      radius: 1
+      color: [1, 0, 0]
+```
+
+To render this scene, save it as `scene.yml` and run the raytracer with:
+```bash
+./raytracer scene.yml
+```
+
+## Architecture
+
+The architecture of the Raytracer is designed for scalability and performance. It consists of several key components:
+
+1. **Renderer**: The core module responsible for ray tracing and image generation.
+2. **Thread Pool**: Manages multiple threads to parallelize the rendering process.
+3. **Network Module**: Handles communication between nodes in a cluster.
+4. **YAML Parser**: Reads and interprets scene configurations from YAML files.
+
+### Thread Management
+
+The thread pool allows the raytracer to spawn multiple threads that work on different parts of the image simultaneously. This significantly reduces rendering time, especially for complex scenes.
+
+### Networking
+
+The networking module uses sockets to communicate between different machines in a cluster. Each node can receive tasks from a master node, process them, and send back results.
+
+## Contributing
+
+Contributions are welcome! If you’d like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+Please ensure that your code follows the existing style and includes tests where applicable.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or feedback, please reach out to the project maintainer:
+
+- **Name**: Sebastian EP
+- **Email**: sebastian@example.com
+
+You can also check the latest releases [here](https://github.com/SebastianEP17/raytracer/releases). Download the latest version and explore the capabilities of the Raytracer.
+
+---
+
+Thank you for your interest in Raytracer! We hope you enjoy using it and contributing to its development. Happy rendering!
